@@ -1,0 +1,156 @@
+/*
+ * Base structure
+ */
+html, body {
+	height: 100%;
+}
+
+header{
+	padding: 0;
+	margin: 0;
+
+	}
+body {
+	padding-top: 46px;
+	padding-left: 0;
+	background-color: #000;
+	
+	
+} 
+
+.fundo {
+	background-image: url('../image/fundo.jpg');
+	background-repeat: no-repeat;
+	background-size:100%;
+	width:950px;
+    height:570px;
+   
+}
+/*
+ * main layout
+ */
+.layout-main {
+    display: flex;
+    min-height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+/*
+ * Content
+ */
+.layout-content {
+    width: 100%;
+   padding-top: 0px;
+    
+}
+
+.container {
+	width: 100%;
+	padding-top: 20px;
+	color:#FFF;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+    width: 0px;
+    height: 570px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;    
+    color:#888a85;
+    background-image: url('../image/fundo2.png');
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: width .5s;
+}
+
+.sidebar .nav {
+	margin-bottom: 0px;
+}
+
+.sidebar .nav-item {
+	width: 80%;
+}
+
+.sidebar .nav-item {
+	margin-left: 0;
+}
+
+.sidebar .nav-link {
+	border-radius: 0;
+} 
+
+.sidebar ul li:hover a, .menu ul li.active a{
+    color: cyan;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.sidebar ul li a{
+    display: block;
+    color:#FFF;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
+
+.sidebar.sidebar-open {
+    width: 200px;
+}
+
+/*
+ * nav-pills home
+ */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	color: #000;
+	background-color: #0489B1;
+	
+}
+
+/*
+ * toogle do navbar do menu
+ */ 
+.navbar{
+	margin-top: 0;
+}
+
+
+.navbar-toggle {
+    display: inline-block;
+    height:40px;
+    width:50px;
+    margin-left: 10px;
+  
+   
+   background-color: #0489B1;
+  
+}
+.container-fluid{
+	margin:0;
+	height: 27px;
+}
+.navbar-nav  {
+	color:#FFF;
+}
+/*
+ * Footer
+ */
+.layout-footer {
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	height: 40px;
+	
+}
+
+.footer-copy {
+	font-size: 92%;
+	display: block;
+	color: #FFF;
+	text-align: center;
+}
