@@ -147,3 +147,12 @@ body {
 	text-align: center;
     
 }
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #0489B1;
+   color:#000;
+}
+
+
+

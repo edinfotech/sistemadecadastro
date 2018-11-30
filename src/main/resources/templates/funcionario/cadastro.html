@@ -16,7 +16,7 @@
 	                        </li>
 	                    </ul>
 	                </div>
-	                <a class="btn btn-primary btn-md" href="/funcionarios/listar" role="button">
+	                <a class="btn btn-primary btn-md" th:href="@{/funcionarios/listar}" role="button">
 	                    <span class="oi oi-spreadsheet" title="Cadastro" aria-hidden="true"></span>
 	                    <span>Listar Funcionários</span>
 	                </a>
@@ -59,9 +59,10 @@
 	                    </div>
 	                    <div class="form-group col-md-6">
 	                        <label for="dataSaida">Data de Saída</label>
-	                        <input type="date" class="form-control" id="dataSaida" th:field="*{dataSaida}"/>
+	                        <input type="date" class="form-control" id="dataSaida" th:field="*{dataSaida}"
+	                        th:classappend="${#fields.hasErrors('dataSaida')} ? 'is-invalid' "/>
 	                        <div class="invalid-feedback">
-								
+								<span th:errors="*{dataSaida}"></span>
 	                        </div>
 	                    </div>
 	                </div>
